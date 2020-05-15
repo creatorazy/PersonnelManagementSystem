@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pms.dao.NoticeDao">
+
+    <resultMap type="com.pms.entity.Notice" id="NoticeMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="content" column="content" jdbcType="VARCHAR"/>
+        <result property="aId" column="a_id" jdbcType="INTEGER"/>
+        <result property="cDate" column="c_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="NoticeMap">
+        select
+          id, title, content, a_id, c_date
+        from pms.notice
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="NoticeMap">
+        select
+          id, title, content, a_id, c_date
+        from pms.notice
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="NoticeMap">
+        select
+          id, title, content, a_id, c_date
+        from pms.notice
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="content != null and content != ''">
+                and content = #{content}
+            </if>
+            <if test="aId != null">
+                and a_id = #{aId}
+            </if>
+            <if test="cDate != null">
+                and c_date = #{cDate}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into pms.notice(title, content)
+        values (#{title}, #{content})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update pms.notice
+        <set>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from pms.notice where id = #{id}
+    </delete>
+
+</mapper>
