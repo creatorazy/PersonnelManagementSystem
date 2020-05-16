@@ -76,4 +76,13 @@ public class StaffServiceImpl implements StaffService {
     public boolean deleteById(Integer id) {
         return this.staffDao.deleteById(id) > 0;
     }
+
+    /**
+     * 查询数据条数
+     * @return 数据条数
+     */
+    @Override
+    public int queryCount(){
+        return  staffDao.queryCount();
+    }
 }

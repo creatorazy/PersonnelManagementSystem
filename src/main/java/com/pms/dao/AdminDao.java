@@ -21,6 +21,14 @@ public interface AdminDao {
     Admin queryById(Integer id);
 
     /**
+     * 通过登陆账户和密码查询单条数据
+     *
+     * @param admin 实例对象
+     * @return 实例对象
+     */
+    Admin queryByLoginNameAndPwd(Admin admin);
+
+    /**
      * 查询指定行数据
      *
      * @param offset 查询起始位置
@@ -62,4 +70,9 @@ public interface AdminDao {
      */
     int deleteById(Integer id);
 
+    /**
+     * 查询数据条数
+     * @return 数据条数
+     */
+    int queryCount();
 }

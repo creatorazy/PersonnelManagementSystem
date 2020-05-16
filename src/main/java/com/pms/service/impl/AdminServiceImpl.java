@@ -31,6 +31,17 @@ public class AdminServiceImpl implements AdminService {
     }
 
     /**
+     * 通过ID查询单条数据
+     *
+     * @param admin 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Admin queryByLoginNameAndPwd(Admin admin) {
+        return this.adminDao.queryByLoginNameAndPwd(admin);
+    }
+
+    /**
      * 查询多条数据
      *
      * @param offset 查询起始位置
@@ -75,5 +86,14 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public boolean deleteById(Integer id) {
         return this.adminDao.deleteById(id) > 0;
+    }
+
+    /**
+     * 查询数据条数
+     * @return 数据条数
+     */
+    @Override
+    public int queryCount(){
+        return  adminDao.queryCount();
     }
 }

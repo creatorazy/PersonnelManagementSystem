@@ -1,0 +1,885 @@
+2020-05-16 15:32:27,911 - Root WebApplicationContext: initialization started
+2020-05-16 15:32:27,957 - Refreshing Root WebApplicationContext
+2020-05-16 15:32:28,206 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\AdminServiceImpl.class]
+2020-05-16 15:32:28,207 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\DepartmentServiceImpl.class]
+2020-05-16 15:32:28,207 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\FileServiceImpl.class]
+2020-05-16 15:32:28,208 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\NoticeServiceImpl.class]
+2020-05-16 15:32:28,209 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\PositionServiceImpl.class]
+2020-05-16 15:32:28,209 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\StaffServiceImpl.class]
+2020-05-16 15:32:28,238 - Loaded 15 bean definitions from class path resource [applicationContext.xml]
+2020-05-16 15:32:28,272 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-16 15:32:28,314 - Creating shared instance of singleton bean 'mapperScanner'
+2020-05-16 15:32:28,347 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-16 15:32:28,350 - No MyBatis mapper was found in '[com.pms.mapper]' package. Please check your configuration.
+2020-05-16 15:32:28,351 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-16 15:32:28,361 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+2020-05-16 15:32:28,363 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+2020-05-16 15:32:28,363 - Looking up JNDI object with name [jdbc.url]
+2020-05-16 15:32:28,364 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+2020-05-16 15:32:28,364 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,364 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+2020-05-16 15:32:28,364 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+2020-05-16 15:32:28,365 - Looking up JNDI object with name [jdbc.username]
+2020-05-16 15:32:28,365 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+2020-05-16 15:32:28,365 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,365 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+2020-05-16 15:32:28,365 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+2020-05-16 15:32:28,365 - Looking up JNDI object with name [jdbc.password]
+2020-05-16 15:32:28,365 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+2020-05-16 15:32:28,366 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,366 - Looking up JNDI object with name [java:comp/env/jdbc.initialSize]
+2020-05-16 15:32:28,366 - Converted JNDI name [java:comp/env/jdbc.initialSize] not found - trying original name [jdbc.initialSize]. javax.naming.NameNotFoundException: Name [jdbc.initialSize] is not bound in this Context. Unable to find [jdbc.initialSize].
+2020-05-16 15:32:28,366 - Looking up JNDI object with name [jdbc.initialSize]
+2020-05-16 15:32:28,366 - JNDI lookup for name [jdbc.initialSize] threw NamingException with message: Name [jdbc.initialSize] is not bound in this Context. Unable to find [jdbc.initialSize].. Returning null.
+2020-05-16 15:32:28,366 - Found key 'jdbc.initialSize' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,366 - Looking up JNDI object with name [java:comp/env/jdbc.maxActive]
+2020-05-16 15:32:28,367 - Converted JNDI name [java:comp/env/jdbc.maxActive] not found - trying original name [jdbc.maxActive]. javax.naming.NameNotFoundException: Name [jdbc.maxActive] is not bound in this Context. Unable to find [jdbc.maxActive].
+2020-05-16 15:32:28,367 - Looking up JNDI object with name [jdbc.maxActive]
+2020-05-16 15:32:28,367 - JNDI lookup for name [jdbc.maxActive] threw NamingException with message: Name [jdbc.maxActive] is not bound in this Context. Unable to find [jdbc.maxActive].. Returning null.
+2020-05-16 15:32:28,367 - Found key 'jdbc.maxActive' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,367 - Looking up JNDI object with name [java:comp/env/jdbc.minIdle]
+2020-05-16 15:32:28,367 - Converted JNDI name [java:comp/env/jdbc.minIdle] not found - trying original name [jdbc.minIdle]. javax.naming.NameNotFoundException: Name [jdbc.minIdle] is not bound in this Context. Unable to find [jdbc.minIdle].
+2020-05-16 15:32:28,367 - Looking up JNDI object with name [jdbc.minIdle]
+2020-05-16 15:32:28,367 - JNDI lookup for name [jdbc.minIdle] threw NamingException with message: Name [jdbc.minIdle] is not bound in this Context. Unable to find [jdbc.minIdle].. Returning null.
+2020-05-16 15:32:28,368 - Found key 'jdbc.minIdle' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,368 - Looking up JNDI object with name [java:comp/env/jdbc.maxWait]
+2020-05-16 15:32:28,368 - Converted JNDI name [java:comp/env/jdbc.maxWait] not found - trying original name [jdbc.maxWait]. javax.naming.NameNotFoundException: Name [jdbc.maxWait] is not bound in this Context. Unable to find [jdbc.maxWait].
+2020-05-16 15:32:28,368 - Looking up JNDI object with name [jdbc.maxWait]
+2020-05-16 15:32:28,368 - JNDI lookup for name [jdbc.maxWait] threw NamingException with message: Name [jdbc.maxWait] is not bound in this Context. Unable to find [jdbc.maxWait].. Returning null.
+2020-05-16 15:32:28,368 - Found key 'jdbc.maxWait' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,369 - Looking up JNDI object with name [java:comp/env/jdbc.testOnBorrow]
+2020-05-16 15:32:28,369 - Converted JNDI name [java:comp/env/jdbc.testOnBorrow] not found - trying original name [jdbc.testOnBorrow]. javax.naming.NameNotFoundException: Name [jdbc.testOnBorrow] is not bound in this Context. Unable to find [jdbc.testOnBorrow].
+2020-05-16 15:32:28,369 - Looking up JNDI object with name [jdbc.testOnBorrow]
+2020-05-16 15:32:28,369 - JNDI lookup for name [jdbc.testOnBorrow] threw NamingException with message: Name [jdbc.testOnBorrow] is not bound in this Context. Unable to find [jdbc.testOnBorrow].. Returning null.
+2020-05-16 15:32:28,369 - Found key 'jdbc.testOnBorrow' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:32:28,370 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-16 15:32:28,371 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-16 15:32:28,373 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-16 15:32:28,374 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-16 15:32:28,381 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@511cd5c8]
+2020-05-16 15:32:28,382 - Creating shared instance of singleton bean 'adminService'
+2020-05-16 15:32:28,405 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pms.dao.AdminDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2020-05-16 15:32:28,408 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pms.dao.AdminDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pms.dao.AdminDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:537)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:653)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:334)
+	... 22 more
+2020-05-16 15:44:40,875 - Root WebApplicationContext: initialization started
+2020-05-16 15:44:40,917 - Refreshing Root WebApplicationContext
+2020-05-16 15:44:41,126 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\AdminServiceImpl.class]
+2020-05-16 15:44:41,128 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\DepartmentServiceImpl.class]
+2020-05-16 15:44:41,128 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\FileServiceImpl.class]
+2020-05-16 15:44:41,128 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\NoticeServiceImpl.class]
+2020-05-16 15:44:41,129 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\PositionServiceImpl.class]
+2020-05-16 15:44:41,129 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\service\impl\StaffServiceImpl.class]
+2020-05-16 15:44:41,171 - Loaded 15 bean definitions from class path resource [applicationContext.xml]
+2020-05-16 15:44:41,229 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-16 15:44:41,285 - Creating shared instance of singleton bean 'mapperScanner'
+2020-05-16 15:44:41,331 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-16 15:44:41,334 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\AdminDao.class]
+2020-05-16 15:44:41,334 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\DepartmentDao.class]
+2020-05-16 15:44:41,334 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\FileDao.class]
+2020-05-16 15:44:41,334 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\NoticeDao.class]
+2020-05-16 15:44:41,334 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\PositionDao.class]
+2020-05-16 15:44:41,334 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\StaffDao.class]
+2020-05-16 15:44:41,336 - Creating MapperFactoryBean with name 'adminDao' and 'com.pms.dao.AdminDao' mapperInterface
+2020-05-16 15:44:41,339 - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2020-05-16 15:44:41,339 - Creating MapperFactoryBean with name 'departmentDao' and 'com.pms.dao.DepartmentDao' mapperInterface
+2020-05-16 15:44:41,339 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-16 15:44:41,339 - Creating MapperFactoryBean with name 'fileDao' and 'com.pms.dao.FileDao' mapperInterface
+2020-05-16 15:44:41,339 - Enabling autowire by type for MapperFactoryBean with name 'fileDao'.
+2020-05-16 15:44:41,339 - Creating MapperFactoryBean with name 'noticeDao' and 'com.pms.dao.NoticeDao' mapperInterface
+2020-05-16 15:44:41,340 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-16 15:44:41,340 - Creating MapperFactoryBean with name 'positionDao' and 'com.pms.dao.PositionDao' mapperInterface
+2020-05-16 15:44:41,340 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-16 15:44:41,340 - Creating MapperFactoryBean with name 'staffDao' and 'com.pms.dao.StaffDao' mapperInterface
+2020-05-16 15:44:41,340 - Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
+2020-05-16 15:44:41,373 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-16 15:44:41,391 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+2020-05-16 15:44:41,393 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+2020-05-16 15:44:41,393 - Looking up JNDI object with name [jdbc.url]
+2020-05-16 15:44:41,394 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+2020-05-16 15:44:41,395 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,395 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+2020-05-16 15:44:41,396 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+2020-05-16 15:44:41,396 - Looking up JNDI object with name [jdbc.username]
+2020-05-16 15:44:41,396 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+2020-05-16 15:44:41,396 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,396 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+2020-05-16 15:44:41,396 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+2020-05-16 15:44:41,396 - Looking up JNDI object with name [jdbc.password]
+2020-05-16 15:44:41,397 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+2020-05-16 15:44:41,397 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,397 - Looking up JNDI object with name [java:comp/env/jdbc.initialSize]
+2020-05-16 15:44:41,397 - Converted JNDI name [java:comp/env/jdbc.initialSize] not found - trying original name [jdbc.initialSize]. javax.naming.NameNotFoundException: Name [jdbc.initialSize] is not bound in this Context. Unable to find [jdbc.initialSize].
+2020-05-16 15:44:41,397 - Looking up JNDI object with name [jdbc.initialSize]
+2020-05-16 15:44:41,397 - JNDI lookup for name [jdbc.initialSize] threw NamingException with message: Name [jdbc.initialSize] is not bound in this Context. Unable to find [jdbc.initialSize].. Returning null.
+2020-05-16 15:44:41,397 - Found key 'jdbc.initialSize' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,398 - Looking up JNDI object with name [java:comp/env/jdbc.maxActive]
+2020-05-16 15:44:41,398 - Converted JNDI name [java:comp/env/jdbc.maxActive] not found - trying original name [jdbc.maxActive]. javax.naming.NameNotFoundException: Name [jdbc.maxActive] is not bound in this Context. Unable to find [jdbc.maxActive].
+2020-05-16 15:44:41,398 - Looking up JNDI object with name [jdbc.maxActive]
+2020-05-16 15:44:41,398 - JNDI lookup for name [jdbc.maxActive] threw NamingException with message: Name [jdbc.maxActive] is not bound in this Context. Unable to find [jdbc.maxActive].. Returning null.
+2020-05-16 15:44:41,398 - Found key 'jdbc.maxActive' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,398 - Looking up JNDI object with name [java:comp/env/jdbc.minIdle]
+2020-05-16 15:44:41,398 - Converted JNDI name [java:comp/env/jdbc.minIdle] not found - trying original name [jdbc.minIdle]. javax.naming.NameNotFoundException: Name [jdbc.minIdle] is not bound in this Context. Unable to find [jdbc.minIdle].
+2020-05-16 15:44:41,399 - Looking up JNDI object with name [jdbc.minIdle]
+2020-05-16 15:44:41,399 - JNDI lookup for name [jdbc.minIdle] threw NamingException with message: Name [jdbc.minIdle] is not bound in this Context. Unable to find [jdbc.minIdle].. Returning null.
+2020-05-16 15:44:41,399 - Found key 'jdbc.minIdle' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,399 - Looking up JNDI object with name [java:comp/env/jdbc.maxWait]
+2020-05-16 15:44:41,399 - Converted JNDI name [java:comp/env/jdbc.maxWait] not found - trying original name [jdbc.maxWait]. javax.naming.NameNotFoundException: Name [jdbc.maxWait] is not bound in this Context. Unable to find [jdbc.maxWait].
+2020-05-16 15:44:41,399 - Looking up JNDI object with name [jdbc.maxWait]
+2020-05-16 15:44:41,400 - JNDI lookup for name [jdbc.maxWait] threw NamingException with message: Name [jdbc.maxWait] is not bound in this Context. Unable to find [jdbc.maxWait].. Returning null.
+2020-05-16 15:44:41,400 - Found key 'jdbc.maxWait' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,400 - Looking up JNDI object with name [java:comp/env/jdbc.testOnBorrow]
+2020-05-16 15:44:41,400 - Converted JNDI name [java:comp/env/jdbc.testOnBorrow] not found - trying original name [jdbc.testOnBorrow]. javax.naming.NameNotFoundException: Name [jdbc.testOnBorrow] is not bound in this Context. Unable to find [jdbc.testOnBorrow].
+2020-05-16 15:44:41,400 - Looking up JNDI object with name [jdbc.testOnBorrow]
+2020-05-16 15:44:41,400 - JNDI lookup for name [jdbc.testOnBorrow] threw NamingException with message: Name [jdbc.testOnBorrow] is not bound in this Context. Unable to find [jdbc.testOnBorrow].. Returning null.
+2020-05-16 15:44:41,401 - Found key 'jdbc.testOnBorrow' in PropertySource 'localProperties' with value of type String
+2020-05-16 15:44:41,402 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-16 15:44:41,406 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-16 15:44:41,408 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-16 15:44:41,412 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-16 15:44:41,420 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@68b2cfe3]
+2020-05-16 15:44:41,421 - Creating shared instance of singleton bean 'adminService'
+2020-05-16 15:44:41,437 - Creating shared instance of singleton bean 'adminDao'
+2020-05-16 15:44:41,458 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2020-05-16 15:44:41,460 - Creating shared instance of singleton bean 'dataSource'
+2020-05-16 15:44:41,567 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2020-05-16 15:44:41,737 - Parsed mapper file: 'file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\Mapper\AdminDao.xml]'
+2020-05-16 15:44:41,746 - Parsed mapper file: 'file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\Mapper\DepartmentDao.xml]'
+2020-05-16 15:44:41,754 - Parsed mapper file: 'file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\Mapper\FileDao.xml]'
+2020-05-16 15:44:41,762 - Parsed mapper file: 'file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\Mapper\NoticeDao.xml]'
+2020-05-16 15:44:41,769 - Parsed mapper file: 'file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\Mapper\PositionDao.xml]'
+2020-05-16 15:44:41,780 - Parsed mapper file: 'file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\Mapper\StaffDao.xml]'
+2020-05-16 15:44:41,789 - Creating shared instance of singleton bean 'departmentService'
+2020-05-16 15:44:41,790 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-16 15:44:41,791 - Creating shared instance of singleton bean 'fileService'
+2020-05-16 15:44:41,792 - Creating shared instance of singleton bean 'fileDao'
+2020-05-16 15:44:41,795 - Creating shared instance of singleton bean 'noticeService'
+2020-05-16 15:44:41,795 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-16 15:44:41,797 - Creating shared instance of singleton bean 'positionService'
+2020-05-16 15:44:41,797 - Creating shared instance of singleton bean 'positionDao'
+2020-05-16 15:44:41,799 - Creating shared instance of singleton bean 'staffService'
+2020-05-16 15:44:41,799 - Creating shared instance of singleton bean 'staffDao'
+2020-05-16 15:44:41,822 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-16 15:44:41,823 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-16 15:44:41,823 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-16 15:44:41,823 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-16 15:44:41,826 - Root WebApplicationContext initialized in 951 ms
+2020-05-16 15:44:41,838 - Filter 'characterEncodingFilter' configured for use
+2020-05-16 15:44:41,858 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 15:44:41,859 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-16 15:44:41,859 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-16 15:44:41,859 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-16 15:44:41,859 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-16 15:44:41,860 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-16 15:44:41,860 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-16 15:44:41,860 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-16 15:44:41,860 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-16 15:44:41,862 - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet'
+2020-05-16 15:44:41,914 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\controller\AdminController.class]
+2020-05-16 15:44:41,914 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\controller\DepartmentController.class]
+2020-05-16 15:44:41,915 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\controller\FileController.class]
+2020-05-16 15:44:41,917 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\controller\NoticeController.class]
+2020-05-16 15:44:41,917 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\controller\PositionController.class]
+2020-05-16 15:44:41,918 - Identified candidate component class: file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\controller\StaffController.class]
+2020-05-16 15:44:41,997 - Loaded 42 bean definitions from class path resource [spring-mvc.xml]
+2020-05-16 15:44:42,013 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-16 15:44:42,073 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-16 15:44:42,074 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-16 15:44:42,076 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-16 15:44:42,077 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-16 15:44:42,078 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@6ed242ba]
+2020-05-16 15:44:42,080 - Creating shared instance of singleton bean 'adminController'
+2020-05-16 15:44:42,083 - Creating shared instance of singleton bean 'departmentController'
+2020-05-16 15:44:42,085 - Creating shared instance of singleton bean 'fileController'
+2020-05-16 15:44:42,085 - Creating shared instance of singleton bean 'noticeController'
+2020-05-16 15:44:42,086 - Creating shared instance of singleton bean 'positionController'
+2020-05-16 15:44:42,087 - Creating shared instance of singleton bean 'staffController'
+2020-05-16 15:44:42,088 - Creating shared instance of singleton bean 'viewResolver'
+2020-05-16 15:44:42,111 - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2020-05-16 15:44:42,112 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2020-05-16 15:44:42,119 - Creating shared instance of singleton bean 'mvcPathMatcher'
+2020-05-16 15:44:42,120 - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2020-05-16 15:44:42,120 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-05-16 15:44:42,149 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2020-05-16 15:44:42,150 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2020-05-16 15:44:42,167 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2020-05-16 15:44:42,170 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#2'
+2020-05-16 15:44:42,170 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2020-05-16 15:44:42,273 - Patterns [/css/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2020-05-16 15:44:42,273 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2020-05-16 15:44:42,279 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2020-05-16 15:44:42,280 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2020-05-16 15:44:42,280 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2020-05-16 15:44:42,281 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2020-05-16 15:44:42,282 - Patterns [/js/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2020-05-16 15:44:42,282 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2020-05-16 15:44:42,283 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2'
+2020-05-16 15:44:42,284 - Patterns [/lib/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2'
+2020-05-16 15:44:42,284 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2020-05-16 15:44:42,284 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3'
+2020-05-16 15:44:42,285 - Patterns [/images/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3'
+2020-05-16 15:44:42,286 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#4'
+2020-05-16 15:44:42,286 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#4'
+2020-05-16 15:44:42,287 - Patterns [/fonts/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#4'
+2020-05-16 15:44:42,287 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2020-05-16 15:44:42,295 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-16 15:44:42,346 - 7 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-16 15:44:42,346 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2020-05-16 15:44:42,807 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-16 15:44:42,831 - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2020-05-16 15:44:42,841 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-16 15:44:42,844 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2020-05-16 15:44:42,860 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-16 15:44:42,861 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2020-05-16 15:44:42,864 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2020-05-16 15:44:42,867 - Creating shared instance of singleton bean 'multipartResolver'
+2020-05-16 15:44:42,881 - Detected CommonsMultipartResolver
+2020-05-16 15:44:42,887 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-16 15:44:42,888 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-16 15:44:42,888 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-16 15:44:42,888 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-16 15:44:42,888 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-16 15:44:42,888 - Completed initialization in 1030 ms
+2020-05-16 15:45:04,006 - POST "/admin/login", parameters={masked}
+2020-05-16 15:45:04,011 - Mapped to com.pms.controller.AdminController#login(Admin)
+2020-05-16 15:45:04,014 - Completed 302 FOUND
+2020-05-16 15:50:05,964 - Root WebApplicationContext: initialization started
+2020-05-16 15:50:06,775 - Root WebApplicationContext initialized in 810 ms
+2020-05-16 15:50:06,815 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 15:50:07,535 - Completed initialization in 720 ms
+2020-05-16 15:51:15,581 - Root WebApplicationContext: initialization started
+2020-05-16 15:51:16,554 - Root WebApplicationContext initialized in 972 ms
+2020-05-16 15:51:16,583 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 15:51:17,199 - Completed initialization in 616 ms
+2020-05-16 15:54:13,091 - Root WebApplicationContext: initialization started
+2020-05-16 15:54:13,919 - Root WebApplicationContext initialized in 828 ms
+2020-05-16 15:54:13,944 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 15:54:14,486 - Completed initialization in 541 ms
+2020-05-16 15:57:31,455 - Root WebApplicationContext: initialization started
+2020-05-16 15:57:32,260 - Root WebApplicationContext initialized in 805 ms
+2020-05-16 15:57:32,284 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 15:57:32,896 - Completed initialization in 612 ms
+2020-05-16 16:00:30,257 - Root WebApplicationContext: initialization started
+2020-05-16 16:00:31,190 - Root WebApplicationContext initialized in 933 ms
+2020-05-16 16:00:31,215 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:00:31,806 - Completed initialization in 591 ms
+2020-05-16 16:00:47,083 - No mapping for POST /pms/pms/admin/login
+2020-05-16 16:01:59,440 - Root WebApplicationContext: initialization started
+2020-05-16 16:02:00,193 - Root WebApplicationContext initialized in 752 ms
+2020-05-16 16:02:00,220 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:02:00,873 - Completed initialization in 653 ms
+2020-05-16 16:02:09,947 - {dataSource-1} init error
+java.sql.SQLException: com.mysql.jdbc.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:653)
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1212)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:887)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1383)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1379)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:109)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy39.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy40.queryByLoginNameAndPwd(Unknown Source)
+	at com.pms.service.impl.AdminServiceImpl.queryByLoginNameAndPwd(AdminServiceImpl.java:41)
+	at com.pms.controller.AdminController.login(AdminController.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:651)
+	... 73 more
+2020-05-16 16:04:38,715 - Root WebApplicationContext: initialization started
+2020-05-16 16:04:39,222 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver': no matching editors or conversion strategy found
+2020-05-16 16:04:39,226 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver': no matching editors or conversion strategy found
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\Users\azy\IdeaProjects\PersonnelManagementSystem\target\classes\com\pms\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:454)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:543)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:653)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:334)
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 36 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 49 more
+Caused by: org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver': no matching editors or conversion strategy found
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:590)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1748)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 55 more
+Caused by: java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.sql.Driver' for property 'driver': no matching editors or conversion strategy found
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:262)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:585)
+	... 61 more
+2020-05-16 16:05:34,996 - Root WebApplicationContext: initialization started
+2020-05-16 16:05:35,824 - Root WebApplicationContext initialized in 827 ms
+2020-05-16 16:05:35,853 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:05:36,435 - Completed initialization in 582 ms
+2020-05-16 16:05:57,952 - Root WebApplicationContext: initialization started
+2020-05-16 16:05:58,952 - Root WebApplicationContext initialized in 999 ms
+2020-05-16 16:05:58,981 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:05:59,565 - Completed initialization in 584 ms
+2020-05-16 16:06:12,356 - {dataSource-1} init error
+java.sql.SQLException: com.mysql.jdbc.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:653)
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1212)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:887)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1383)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1379)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:109)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy39.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy40.queryByLoginNameAndPwd(Unknown Source)
+	at com.pms.service.impl.AdminServiceImpl.queryByLoginNameAndPwd(AdminServiceImpl.java:41)
+	at com.pms.controller.AdminController.login(AdminController.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:651)
+	... 73 more
+2020-05-16 16:07:07,838 - Root WebApplicationContext: initialization started
+2020-05-16 16:07:08,822 - Root WebApplicationContext initialized in 984 ms
+2020-05-16 16:07:08,855 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:07:09,530 - Completed initialization in 675 ms
+2020-05-16 16:07:21,150 - {dataSource-1} init error
+java.sql.SQLException: com.mysql.jdbc.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:653)
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1212)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:887)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1383)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1379)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:109)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy39.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy40.queryByLoginNameAndPwd(Unknown Source)
+	at com.pms.service.impl.AdminServiceImpl.queryByLoginNameAndPwd(AdminServiceImpl.java:41)
+	at com.pms.controller.AdminController.login(AdminController.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:651)
+	... 73 more
+2020-05-16 16:08:57,477 - Root WebApplicationContext: initialization started
+2020-05-16 16:08:58,547 - Root WebApplicationContext initialized in 1069 ms
+2020-05-16 16:08:58,584 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:08:59,147 - Completed initialization in 563 ms
+2020-05-16 16:09:08,953 - {dataSource-1} inited
+2020-05-16 16:13:25,171 - Root WebApplicationContext: initialization started
+2020-05-16 16:13:25,928 - Root WebApplicationContext initialized in 756 ms
+2020-05-16 16:13:25,961 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:13:26,552 - Completed initialization in 591 ms
+2020-05-16 16:13:41,611 - No mapping for POST /pms/
+2020-05-16 16:13:43,351 - No mapping for POST /pms/
+2020-05-16 16:13:44,049 - No mapping for POST /pms/
+2020-05-16 16:14:29,886 - {dataSource-1} inited
+2020-05-16 16:16:41,719 - Root WebApplicationContext: initialization started
+2020-05-16 16:16:42,534 - Root WebApplicationContext initialized in 815 ms
+2020-05-16 16:16:42,558 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:16:43,087 - Completed initialization in 529 ms
+2020-05-16 16:18:06,708 - {dataSource-1} inited
+2020-05-16 16:40:47,507 - Root WebApplicationContext: initialization started
+2020-05-16 16:40:48,263 - Root WebApplicationContext initialized in 755 ms
+2020-05-16 16:40:48,294 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:40:48,982 - Completed initialization in 688 ms
+2020-05-16 16:41:05,417 - {dataSource-1} inited
+2020-05-16 16:44:41,004 - Root WebApplicationContext: initialization started
+2020-05-16 16:44:41,781 - Root WebApplicationContext initialized in 750 ms
+2020-05-16 16:44:41,823 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:44:42,462 - Completed initialization in 639 ms
+2020-05-16 16:46:18,410 - Root WebApplicationContext: initialization started
+2020-05-16 16:46:19,276 - Root WebApplicationContext initialized in 866 ms
+2020-05-16 16:46:19,311 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:46:20,099 - Completed initialization in 788 ms
+2020-05-16 16:49:27,035 - Root WebApplicationContext: initialization started
+2020-05-16 16:49:27,809 - Root WebApplicationContext initialized in 774 ms
+2020-05-16 16:49:27,840 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:49:28,496 - Completed initialization in 655 ms
+2020-05-16 16:49:28,805 - No mapping for GET /login
+2020-05-16 16:52:26,783 - Root WebApplicationContext: initialization started
+2020-05-16 16:52:27,602 - Root WebApplicationContext initialized in 819 ms
+2020-05-16 16:52:27,633 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:52:28,265 - Completed initialization in 632 ms
+2020-05-16 16:52:40,068 - {dataSource-1} inited
+2020-05-16 16:53:19,023 - Root WebApplicationContext: initialization started
+2020-05-16 16:53:19,731 - Root WebApplicationContext initialized in 708 ms
+2020-05-16 16:53:19,755 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 16:53:20,365 - Completed initialization in 609 ms
+2020-05-16 17:18:32,715 - Root WebApplicationContext: initialization started
+2020-05-16 17:18:33,528 - Root WebApplicationContext initialized in 813 ms
+2020-05-16 17:18:33,558 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:18:34,250 - Completed initialization in 692 ms
+2020-05-16 17:24:34,860 - Root WebApplicationContext: initialization started
+2020-05-16 17:24:35,668 - Root WebApplicationContext initialized in 807 ms
+2020-05-16 17:24:35,696 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:24:36,374 - Completed initialization in 678 ms
+2020-05-16 17:26:30,123 - Root WebApplicationContext: initialization started
+2020-05-16 17:26:30,900 - Root WebApplicationContext initialized in 776 ms
+2020-05-16 17:26:30,927 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:26:31,552 - Completed initialization in 625 ms
+2020-05-16 17:27:38,237 - Root WebApplicationContext: initialization started
+2020-05-16 17:27:38,988 - Root WebApplicationContext initialized in 751 ms
+2020-05-16 17:27:39,016 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:27:39,614 - Completed initialization in 598 ms
+2020-05-16 17:31:51,920 - Root WebApplicationContext: initialization started
+2020-05-16 17:31:52,898 - Root WebApplicationContext initialized in 978 ms
+2020-05-16 17:31:52,936 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:31:53,710 - Completed initialization in 774 ms
+2020-05-16 17:31:55,657 - No mapping for GET /
+2020-05-16 17:32:06,035 - No mapping for GET /
+2020-05-16 17:32:21,784 - No mapping for GET /stu/info
+2020-05-16 17:35:48,277 - Root WebApplicationContext: initialization started
+2020-05-16 17:35:49,207 - Root WebApplicationContext initialized in 929 ms
+2020-05-16 17:35:49,231 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:35:49,876 - Completed initialization in 645 ms
+2020-05-16 17:35:58,162 - No mapping for GET /
+2020-05-16 17:36:51,339 - No mapping for GET /
+2020-05-16 17:39:20,651 - Root WebApplicationContext: initialization started
+2020-05-16 17:39:21,466 - Root WebApplicationContext initialized in 814 ms
+2020-05-16 17:39:21,498 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:39:22,218 - Completed initialization in 720 ms
+2020-05-16 17:44:03,661 - Root WebApplicationContext: initialization started
+2020-05-16 17:44:04,402 - Root WebApplicationContext initialized in 741 ms
+2020-05-16 17:44:04,431 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:44:04,970 - Completed initialization in 538 ms
+2020-05-16 17:44:26,378 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-05-16 17:46:41,061 - Root WebApplicationContext: initialization started
+2020-05-16 17:46:41,825 - Root WebApplicationContext initialized in 764 ms
+2020-05-16 17:46:41,852 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:46:42,459 - Completed initialization in 607 ms
+2020-05-16 17:50:14,995 - Root WebApplicationContext: initialization started
+2020-05-16 17:50:15,833 - Root WebApplicationContext initialized in 838 ms
+2020-05-16 17:50:15,868 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:50:16,479 - Completed initialization in 611 ms
+2020-05-16 17:51:05,698 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-05-16 17:52:53,839 - Root WebApplicationContext: initialization started
+2020-05-16 17:52:54,608 - Root WebApplicationContext initialized in 768 ms
+2020-05-16 17:52:54,639 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:52:55,226 - Completed initialization in 587 ms
+2020-05-16 17:53:02,778 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-05-16 17:57:16,377 - Root WebApplicationContext: initialization started
+2020-05-16 17:57:17,332 - Root WebApplicationContext initialized in 954 ms
+2020-05-16 17:57:17,361 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:57:18,050 - Completed initialization in 689 ms
+2020-05-16 17:58:48,274 - Root WebApplicationContext: initialization started
+2020-05-16 17:58:49,087 - Root WebApplicationContext initialized in 813 ms
+2020-05-16 17:58:49,126 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 17:58:49,757 - Completed initialization in 631 ms
+2020-05-16 18:00:01,523 - Root WebApplicationContext: initialization started
+2020-05-16 18:00:02,371 - Root WebApplicationContext initialized in 847 ms
+2020-05-16 18:00:02,405 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:00:03,012 - Completed initialization in 607 ms
+2020-05-16 18:00:03,428 - No mapping for GET /
+2020-05-16 18:00:52,724 - {dataSource-1} inited
+2020-05-16 18:02:56,653 - Root WebApplicationContext: initialization started
+2020-05-16 18:02:57,498 - Root WebApplicationContext initialized in 844 ms
+2020-05-16 18:02:57,529 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:02:58,078 - Completed initialization in 549 ms
+2020-05-16 18:03:07,399 - No mapping for GET /
+2020-05-16 18:05:37,899 - Root WebApplicationContext: initialization started
+2020-05-16 18:05:38,870 - Root WebApplicationContext initialized in 971 ms
+2020-05-16 18:05:38,899 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:05:39,584 - Completed initialization in 685 ms
+2020-05-16 18:06:46,610 - Root WebApplicationContext: initialization started
+2020-05-16 18:06:47,454 - Root WebApplicationContext initialized in 844 ms
+2020-05-16 18:06:47,485 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:06:48,056 - Completed initialization in 571 ms
+2020-05-16 18:08:12,745 - Root WebApplicationContext: initialization started
+2020-05-16 18:08:13,497 - Root WebApplicationContext initialized in 751 ms
+2020-05-16 18:08:13,526 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:08:14,089 - Completed initialization in 563 ms
+2020-05-16 18:08:29,801 - No mapping for GET /favicon.ico
+2020-05-16 18:09:44,958 - Root WebApplicationContext: initialization started
+2020-05-16 18:09:45,783 - Root WebApplicationContext initialized in 824 ms
+2020-05-16 18:09:45,813 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:09:46,366 - Completed initialization in 553 ms
+2020-05-16 18:12:20,156 - Root WebApplicationContext: initialization started
+2020-05-16 18:12:21,049 - Root WebApplicationContext initialized in 893 ms
+2020-05-16 18:12:21,080 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:12:21,655 - Completed initialization in 575 ms
+2020-05-16 18:13:12,836 - Root WebApplicationContext: initialization started
+2020-05-16 18:13:13,645 - Root WebApplicationContext initialized in 809 ms
+2020-05-16 18:13:13,675 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:13:14,223 - Completed initialization in 548 ms
+2020-05-16 18:13:36,303 - No mapping for GET /
+2020-05-16 18:27:52,940 - Root WebApplicationContext: initialization started
+2020-05-16 18:27:53,812 - Root WebApplicationContext initialized in 871 ms
+2020-05-16 18:27:53,836 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:27:54,413 - Completed initialization in 577 ms
+2020-05-16 18:29:15,906 - Root WebApplicationContext: initialization started
+2020-05-16 18:29:16,776 - Root WebApplicationContext initialized in 869 ms
+2020-05-16 18:29:16,808 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:29:17,356 - Completed initialization in 547 ms
+2020-05-16 18:29:36,092 - Root WebApplicationContext: initialization started
+2020-05-16 18:29:37,041 - Root WebApplicationContext initialized in 949 ms
+2020-05-16 18:29:37,078 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:29:37,737 - Completed initialization in 659 ms
+2020-05-16 18:35:41,489 - {dataSource-1} inited
+2020-05-16 18:38:19,117 - Root WebApplicationContext: initialization started
+2020-05-16 18:38:20,000 - Root WebApplicationContext initialized in 882 ms
+2020-05-16 18:38:20,031 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:38:20,615 - Completed initialization in 584 ms
+2020-05-16 18:38:27,949 - {dataSource-1} inited
+2020-05-16 18:40:22,877 - Root WebApplicationContext: initialization started
+2020-05-16 18:40:23,865 - Root WebApplicationContext initialized in 988 ms
+2020-05-16 18:40:23,901 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:40:24,493 - Completed initialization in 592 ms
+2020-05-16 18:40:33,758 - {dataSource-1} inited
+2020-05-16 18:40:45,816 - Root WebApplicationContext: initialization started
+2020-05-16 18:40:46,668 - Root WebApplicationContext initialized in 851 ms
+2020-05-16 18:40:46,698 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:40:47,290 - Completed initialization in 592 ms
+2020-05-16 18:40:57,370 - {dataSource-1} inited
+2020-05-16 18:55:59,082 - Root WebApplicationContext: initialization started
+2020-05-16 18:55:59,921 - Root WebApplicationContext initialized in 839 ms
+2020-05-16 18:55:59,953 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:56:00,591 - Completed initialization in 638 ms
+2020-05-16 18:56:07,530 - No mapping for GET /favicon.ico
+2020-05-16 18:56:15,820 - {dataSource-1} inited
+2020-05-16 18:57:40,787 - Root WebApplicationContext: initialization started
+2020-05-16 18:57:41,630 - Root WebApplicationContext initialized in 843 ms
+2020-05-16 18:57:41,669 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 18:57:42,379 - Completed initialization in 710 ms
+2020-05-16 18:57:58,404 - {dataSource-1} inited
+2020-05-16 19:39:49,879 - Root WebApplicationContext: initialization started
+2020-05-16 19:39:50,831 - Root WebApplicationContext initialized in 952 ms
+2020-05-16 19:39:50,866 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 19:39:51,652 - Completed initialization in 786 ms
+2020-05-16 19:40:30,928 - {dataSource-1} inited
+2020-05-16 20:07:20,276 - Root WebApplicationContext: initialization started
+2020-05-16 20:07:21,187 - Root WebApplicationContext initialized in 911 ms
+2020-05-16 20:07:21,215 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 20:07:21,734 - Completed initialization in 519 ms
+2020-05-16 20:08:13,776 - {dataSource-1} inited
+2020-05-16 20:19:52,581 - Root WebApplicationContext: initialization started
+2020-05-16 20:19:53,380 - Root WebApplicationContext initialized in 799 ms
+2020-05-16 20:19:53,416 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 20:19:54,072 - Completed initialization in 656 ms
+2020-05-16 20:21:17,780 - Root WebApplicationContext: initialization started
+2020-05-16 20:21:18,802 - Root WebApplicationContext initialized in 1021 ms
+2020-05-16 20:21:18,836 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 20:21:19,411 - Completed initialization in 575 ms
+2020-05-16 20:21:46,423 - {dataSource-1} inited
+2020-05-16 23:42:12,310 - Root WebApplicationContext: initialization started
+2020-05-16 23:42:13,113 - Root WebApplicationContext initialized in 803 ms
+2020-05-16 23:42:13,152 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 23:42:13,761 - Completed initialization in 609 ms
+2020-05-16 23:42:17,231 - No mapping for GET /favicon.ico
+2020-05-16 23:42:27,294 - {dataSource-1} inited
+2020-05-16 23:42:28,043 - No mapping for GET /welcome.html
+2020-05-16 23:43:45,220 - Root WebApplicationContext: initialization started
+2020-05-16 23:43:46,005 - Root WebApplicationContext initialized in 784 ms
+2020-05-16 23:43:46,035 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 23:43:46,657 - Completed initialization in 622 ms
+2020-05-16 23:43:58,662 - {dataSource-1} inited
+2020-05-16 23:43:58,873 - No mapping for GET /welcome.html
+2020-05-16 23:44:52,541 - No mapping for GET /welcome.html
+2020-05-16 23:44:55,033 - No mapping for GET /welcome.html
+2020-05-16 23:44:57,346 - No mapping for GET /welcome.html
+2020-05-16 23:47:35,754 - Root WebApplicationContext: initialization started
+2020-05-16 23:47:36,612 - Root WebApplicationContext initialized in 857 ms
+2020-05-16 23:47:36,641 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 23:47:37,296 - Completed initialization in 655 ms
+2020-05-16 23:47:47,323 - {dataSource-1} inited
+2020-05-16 23:47:48,206 - No mapping for GET /pages/css/font.css
+2020-05-16 23:47:48,231 - No mapping for GET /pages/css/xadmin.css
+2020-05-16 23:47:48,232 - No mapping for GET /pages/lib/layui/layui.js
+2020-05-16 23:47:48,236 - No mapping for GET /pages/js/xadmin.js
+2020-05-16 23:47:50,470 - No mapping for GET /pages/css/xadmin.css
+2020-05-16 23:47:50,470 - No mapping for GET /pages/css/font.css
+2020-05-16 23:47:50,509 - No mapping for GET /pages/lib/layui/layui.js
+2020-05-16 23:47:50,509 - No mapping for GET /pages/js/xadmin.js
+2020-05-16 23:47:50,520 - No mapping for GET /pages/js/xadmin.js
+2020-05-16 23:47:58,549 - No mapping for GET /pages/css/font.css
+2020-05-16 23:47:58,550 - No mapping for GET /pages/css/xadmin.css
+2020-05-16 23:51:31,123 - Root WebApplicationContext: initialization started
+2020-05-16 23:51:31,959 - Root WebApplicationContext initialized in 835 ms
+2020-05-16 23:51:31,983 - Initializing Servlet 'dispatcherServlet'
+2020-05-16 23:51:32,554 - Completed initialization in 571 ms
+2020-05-16 23:52:07,421 - {dataSource-1} inited
+2020-05-16 23:53:45,554 - No mapping for GET /member-list.html
+2020-05-16 23:53:46,402 - No mapping for GET /welcome1.html

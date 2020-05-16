@@ -10,6 +10,11 @@
         <result property="cDate" column="c_date" jdbcType="TIMESTAMP"/>
     </resultMap>
 
+    <!--查询数据数量-->
+    <select id="queryCount" resultType="int">
+        select count(*) from pms.notice
+    </select>
+
     <!--查询单个-->
     <select id="queryById" resultMap="NoticeMap">
         select

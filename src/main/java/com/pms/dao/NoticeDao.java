@@ -62,4 +62,9 @@ public interface NoticeDao {
      */
     int deleteById(Integer id);
 
+    /**
+     * 查询数据条数
+     * @return 数据条数
+     */
+    int queryCount();
 }

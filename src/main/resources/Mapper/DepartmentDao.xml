@@ -8,6 +8,11 @@
         <result property="desc" column="desc" jdbcType="VARCHAR"/>
     </resultMap>
 
+    <!--查询数据数量-->
+    <select id="queryCount" resultType="int">
+        select count(*) from pms.department
+    </select>
+
     <!--查询单个-->
     <select id="queryById" resultMap="DepartmentMap">
         select

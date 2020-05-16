@@ -32,4 +32,13 @@ public class FileController {
         return this.fileService.queryById(id);
     }
 
+    /**
+     * 查询数据数量
+     * @return 数据数量
+     */
+    @GetMapping("/count")
+    public int selectCount(){
+        return fileService.queryCount();
+    }
+
 }

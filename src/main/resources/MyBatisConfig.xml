@@ -3,22 +3,27 @@
 
 <!-- 根标签 -->
 <configuration>
-    <properties resource="jdbc.properties">
+<!--    <properties resource="jdbc.properties">-->
 
-    </properties>
-    <environments default="a">
+<!--    </properties>-->
+<!--    <environments default="a">-->
 
-        <environment id="a">
-            <transactionManager type="JDBC"/>
-            <dataSource type="POOLED">
-                <property name="driver" value="${jdbc.driver}" />
-                <property name="url" value="${jdbc.url}" />
-                <property name="username" value="${jdbc.username}" />
-                <property name="password" value="${jdbc.password}" />
-            </dataSource>
-        </environment>
-    </environments>
-    <mappers>
-        <mapper resource="Mapper/PositionMapper.xml"/>
-    </mappers>
+<!--        <environment id="a">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="${jdbc.driver}" />-->
+<!--                <property name="url" value="${jdbc.url}" />-->
+<!--                <property name="username" value="${jdbc.username}" />-->
+<!--                <property name="password" value="${jdbc.password}" />-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+<!--    <mappers>-->
+<!--        <mapper resource="Mapper/AdminDao.xml"/>-->
+<!--        <mapper resource="Mapper/DepartmentDao.xml"/>-->
+<!--        <mapper resource="Mapper/FileDao.xml"/>-->
+<!--        <mapper resource="Mapper/NoticeDao.xml"/>-->
+<!--        <mapper resource="Mapper/PositionDao.xml"/>-->
+<!--        <mapper resource="Mapper/StaffDao.xml"/>-->
+<!--    </mappers>-->
 </configuration>

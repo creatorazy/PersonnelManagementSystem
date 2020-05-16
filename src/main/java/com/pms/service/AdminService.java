@@ -20,6 +20,14 @@ public interface AdminService {
     Admin queryById(Integer id);
 
     /**
+     * 通过ID查询单条数据
+     *
+     * @param admin 实例对象
+     * @return 实例对象
+     */
+    Admin queryByLoginNameAndPwd(Admin admin);
+
+    /**
      * 查询多条数据
      *
      * @param offset 查询起始位置
@@ -52,4 +60,9 @@ public interface AdminService {
      */
     boolean deleteById(Integer id);
 
+    /**
+     * 查询数据条数
+     * @return 数据条数
+     */
+    int queryCount();
 }
