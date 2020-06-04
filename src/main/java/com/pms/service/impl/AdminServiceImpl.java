@@ -1,12 +1,14 @@
 package com.pms.service.impl;
 
+import com.pms.dao.*;
 import com.pms.entity.Admin;
-import com.pms.dao.AdminDao;
-import com.pms.service.AdminService;
+import com.pms.service.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Admin)表服务实现类
@@ -15,23 +17,30 @@ import java.util.List;
  * @since 2020-05-15 11:13:04
  */
 @Service("adminService")
-public class AdminServiceImpl implements AdminService {
+public class AdminServiceImpl extends BaseServiceImpl<Admin> implements AdminService {
+
     @Resource
     private AdminDao adminDao;
+    @Resource
+    private DepartmentDao departmentDao;
+    @Resource
+    private FileDao fileDao;
+    @Resource
+    private NoticeDao noticeDao;
+    @Resource
+    private PositionDao positionDao;
+    @Resource
+    private StaffDao staffDao;
 
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    @Override
-    public Admin queryById(Integer id) {
-        return this.adminDao.queryById(id);
+    @Autowired
+    public void setBaseDao(AdminDao adminDao){
+        super.baseDao = adminDao;
     }
 
+
+
     /**
-     * 通过ID查询单条数据
+     * 登陆
      *
      * @param admin 实例对象
      * @return 实例对象
@@ -41,59 +50,17 @@ public class AdminServiceImpl implements AdminService {
         return this.adminDao.queryByLoginNameAndPwd(admin);
     }
 
-    /**
-     * 查询多条数据
-     *
-     * @param offset 查询起始位置
-     * @param limit 查询条数
-     * @return 对象列表
-     */
     @Override
-    public List<Admin> queryAllByLimit(int offset, int limit) {
-        return this.adminDao.queryAllByLimit(offset, limit);
+    public Map<String, Object> total() {
+        Map<String,Object> map = new HashMap<>();
+        map.put("adminCount",adminDao.queryCount(null));
+        map.put("depCount",departmentDao.queryCount(null));
+        map.put("fileCount",fileDao.queryCount(null));
+        map.put("noticeCount",noticeDao.queryCount(null));
+        map.put("positionCount",positionDao.queryCount(null));
+        map.put("staffCount",staffDao.queryCount(null));
+        return map;
     }
 
-    /**
-     * 新增数据
-     *
-     * @param admin 实例对象
-     * @return 实例对象
-     */
-    @Override
-    public Admin insert(Admin admin) {
-        this.adminDao.insert(admin);
-        return admin;
-    }
 
-    /**
-     * 修改数据
-     *
-     * @param admin 实例对象
-     * @return 实例对象
-     */
-    @Override
-    public Admin update(Admin admin) {
-        this.adminDao.update(admin);
-        return this.queryById(admin.getId());
-    }
-
-    /**
-     * 通过主键删除数据
-     *
-     * @param id 主键
-     * @return 是否成功
-     */
-    @Override
-    public boolean deleteById(Integer id) {
-        return this.adminDao.deleteById(id) > 0;
-    }
-
-    /**
-     * 查询数据条数
-     * @return 数据条数
-     */
-    @Override
-    public int queryCount(){
-        return  adminDao.queryCount();
-    }
 }

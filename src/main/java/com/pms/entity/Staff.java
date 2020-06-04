@@ -34,6 +34,15 @@ public class Staff implements Serializable {
     
     private Date cDate;
 
+    private Position position;
+
+    public Position getPosition() {
+        return position;
+    }
+
+    public void setPosition(Position position) {
+        this.position = position;
+    }
 
     public Integer getId() {
         return id;
@@ -123,4 +132,21 @@ public class Staff implements Serializable {
         this.cDate = cDate;
     }
 
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", tel='" + tel + '\'' +
+                ", email='" + email + '\'' +
+                ", pId=" + pId +
+                ", education='" + education + '\'' +
+                ", dId=" + dId +
+                ", contactAddress='" + contactAddress + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", cDate=" + cDate +
+                ", position=" + position +
+                '}';
+    }
 }

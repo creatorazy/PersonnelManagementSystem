@@ -2,6 +2,8 @@ package com.pms.dao;
 
 import com.pms.entity.Admin;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 /**
@@ -10,16 +12,7 @@ import java.util.List;
  * @author makejava
  * @since 2020-05-15 11:13:04
  */
-public interface AdminDao {
-
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    Admin queryById(Integer id);
-
+public interface AdminDao extends BaseDao<Admin> {
     /**
      * 通过登陆账户和密码查询单条数据
      *
@@ -28,51 +21,6 @@ public interface AdminDao {
      */
     Admin queryByLoginNameAndPwd(Admin admin);
 
-    /**
-     * 查询指定行数据
-     *
-     * @param offset 查询起始位置
-     * @param limit 查询条数
-     * @return 对象列表
-     */
-    List<Admin> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
+    Admin queryByLoginName(String name);
 
-
-    /**
-     * 通过实体作为筛选条件查询
-     *
-     * @param admin 实例对象
-     * @return 对象列表
-     */
-    List<Admin> queryAll(Admin admin);
-
-    /**
-     * 新增数据
-     *
-     * @param admin 实例对象
-     * @return 影响行数
-     */
-    int insert(Admin admin);
-
-    /**
-     * 修改数据
-     *
-     * @param admin 实例对象
-     * @return 影响行数
-     */
-    int update(Admin admin);
-
-    /**
-     * 通过主键删除数据
-     *
-     * @param id 主键
-     * @return 影响行数
-     */
-    int deleteById(Integer id);
-
-    /**
-     * 查询数据条数
-     * @return 数据条数
-     */
-    int queryCount();
 }

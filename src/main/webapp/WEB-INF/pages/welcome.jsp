@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html class="x-admin-sm">
 <head>
@@ -14,7 +14,8 @@
     <title>欢迎页面-X-admin2.2</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <meta name="viewport"
+          content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi"/>
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/font.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/xadmin.css">
     <script src="<%=request.getContextPath()%>/lib/layui/layui.js" charset="utf-8"></script>
@@ -131,19 +132,19 @@
         var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
         $("#now").html(year + "年" + mon + "月" + date + "日  " + h + ":" + m + ":" + s + "  " + weeks[week]);
     }
+
     getDate();
-    setInterval("getDate()",1000);
-    function getData(type) {
-        $.get('<%=request.getContextPath()%>/'+type+'/count',{},function (resp) {
-            $("#"+type).text(resp);
-        })
-    }
-    getData("admin");
-    getData("department");
-    getData("file");
-    getData("notice");
-    getData("position");
-    getData("staff");
+    setInterval("getDate()", 1000);
+
+    $.get('<%=request.getContextPath()%>/total', {}, function (resp) {
+        $("#admin").text(resp.adminCount);
+        $("#department").text(resp.depCount);
+        $("#file").text(resp.fileCount);
+        $("#notice").text(resp.noticeCount);
+        $("#position").text(resp.positionCount);
+        $("#staff").text(resp.staffCount);
+    })
+
 </script>
 </html>
 

@@ -14,6 +14,9 @@
         <result property="contactAddress" column="contact_address" jdbcType="VARCHAR"/>
         <result property="idCard" column="id_card" jdbcType="VARCHAR"/>
         <result property="cDate" column="c_date" jdbcType="TIMESTAMP"/>
+        <association property="position"  fetchType="lazy" column="p_id" select="com.pms.dao.PositionDao.queryById" javaType="com.pms.entity.Position">
+
+        </association>
     </resultMap>
 
     <!--查询数据数量-->

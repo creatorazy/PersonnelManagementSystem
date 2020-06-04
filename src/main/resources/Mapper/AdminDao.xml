@@ -14,6 +14,11 @@
     <!--查询数据数量-->
     <select id="queryCount" resultType="int">
         select count(*) from pms.admin
+        <where>
+            <if test="loginName != null and loginName != ''">
+                and login_name like concat('%',#{loginName},'%')
+            </if>
+        </where>
     </select>
 
     <!--查询单个-->
@@ -22,6 +27,13 @@
           id, login_name, user_name, password, state, c_date
         from pms.admin
         where id = #{id}
+    </select>
+
+    <select id="queryByLoginName" resultMap="AdminMap">
+        select
+            id, login_name, user_name, password, state, c_date
+        from pms.admin
+        where login_name = #{loginName}
     </select>
 
     <!--根据登陆账户密码查询单个用户-->
@@ -37,7 +49,14 @@
         select
           id, login_name, user_name, password, state, c_date
         from pms.admin
-        limit #{offset}, #{limit}
+        <where>
+            <if test="t.loginName != null and t.loginName != ''">
+                and login_name like concat('%',#{t.loginName},'%')
+            </if>
+            and login_name != 'admin'
+        </where>
+
+        limit #{pageUtils.begin},#{pageUtils.end}
     </select>
 
     <!--通过实体作为筛选条件查询-->
@@ -89,6 +108,9 @@
             <if test="state != null and state != ''">
                 state = #{state},
             </if>
+            <if test="state == null or state == ''">
+                state = '1',
+            </if>
             <if test="cDate != null">
                 c_date = #{cDate},
             </if>
@@ -97,8 +119,17 @@
     </update>
 
     <!--通过主键删除-->
-    <delete id="deleteById">
-        delete from pms.admin where id = #{id}
+    <delete id="deleteByIds">
+        delete
+        from pms.admin
+        where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
     </delete>
+
+    <select id="isExist" resultType="int">
+        select count(*) from pms.admin where login_name = #{name};
+    </select>
 
 </mapper>

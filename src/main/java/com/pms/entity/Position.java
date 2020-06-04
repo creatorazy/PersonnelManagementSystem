@@ -42,4 +42,12 @@ public class Position implements Serializable {
         this.desc = desc;
     }
 
+    @Override
+    public String toString() {
+        return "Position{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                '}';
+    }
 }

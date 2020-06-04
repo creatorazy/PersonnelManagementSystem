@@ -1,8 +1,10 @@
 package com.pms.service.impl;
 
+import com.pms.dao.DepartmentDao;
 import com.pms.entity.Position;
 import com.pms.dao.PositionDao;
 import com.pms.service.PositionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -15,74 +17,13 @@ import java.util.List;
  * @since 2020-05-15 11:11:46
  */
 @Service("positionService")
-public class PositionServiceImpl implements PositionService {
+public class PositionServiceImpl extends BaseServiceImpl<Position> implements PositionService {
     @Resource
     private PositionDao positionDao;
 
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    @Override
-    public Position queryById(Integer id) {
-        return this.positionDao.queryById(id);
+    @Autowired
+    public void setBaseDao(PositionDao positionDao){
+        super.baseDao = positionDao;
     }
 
-    /**
-     * 查询多条数据
-     *
-     * @param offset 查询起始位置
-     * @param limit 查询条数
-     * @return 对象列表
-     */
-    @Override
-    public List<Position> queryAllByLimit(int offset, int limit) {
-        return this.positionDao.queryAllByLimit(offset, limit);
-    }
-
-    /**
-     * 新增数据
-     *
-     * @param position 实例对象
-     * @return 实例对象
-     */
-    @Override
-    public Position insert(Position position) {
-        this.positionDao.insert(position);
-        return position;
-    }
-
-    /**
-     * 修改数据
-     *
-     * @param position 实例对象
-     * @return 实例对象
-     */
-    @Override
-    public Position update(Position position) {
-        this.positionDao.update(position);
-        return this.queryById(position.getId());
-    }
-
-    /**
-     * 通过主键删除数据
-     *
-     * @param id 主键
-     * @return 是否成功
-     */
-    @Override
-    public boolean deleteById(Integer id) {
-        return this.positionDao.deleteById(id) > 0;
-    }
-
-    /**
-     * 查询数据条数
-     * @return 数据条数
-     */
-    @Override
-    public int queryCount(){
-        return  positionDao.queryCount();
-    }
 }

@@ -73,4 +73,15 @@ public class Admin implements Serializable {
         this.cDate = cDate;
     }
 
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "id=" + id +
+                ", loginName='" + loginName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", state='" + state + '\'' +
+                ", cDate=" + cDate +
+                '}';
+    }
 }

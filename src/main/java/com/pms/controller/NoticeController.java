@@ -1,7 +1,9 @@
 package com.pms.controller;
 
 import com.pms.entity.Notice;
+import com.pms.service.DepartmentService;
 import com.pms.service.NoticeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -13,8 +15,8 @@ import javax.annotation.Resource;
  * @since 2020-05-15 11:11:46
  */
 @RestController
-@RequestMapping("notice")
-public class NoticeController {
+@RequestMapping("/notice")
+public class NoticeController extends BaseController<Notice>{
     /**
      * 服务对象
      */
@@ -22,23 +24,12 @@ public class NoticeController {
     private NoticeService noticeService;
 
     /**
-     * 通过主键查询单条数据
-     *
-     * @param id 主键
-     * @return 单条数据
+     * 给父类注入BaseService
+     * @param noticeService
      */
-    @GetMapping("selectOne")
-    public Notice selectOne(Integer id) {
-        return this.noticeService.queryById(id);
-    }
-
-    /**
-     * 查询数据数量
-     * @return 数据数量
-     */
-    @GetMapping("/count")
-    public int selectCount(){
-        return noticeService.queryCount();
+    @Autowired
+    public void setBaseService(NoticeService noticeService){
+        super.baseService = noticeService;
     }
 
 }

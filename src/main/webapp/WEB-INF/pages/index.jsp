@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://shiro.apache.org/tags" prefix="shiro" %>
 <!doctype html>
 <html class="x-admin-sm">
 <head>
@@ -13,8 +15,9 @@
     <title>人事管理系统</title>
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport"
+          content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/font.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/xadmin.css">
     <!-- <link rel="stylesheet" href="./css/theme5.css"> -->
@@ -27,7 +30,7 @@
     <![endif]-->
     <script>
         // 是否开启刷新记忆tab功能
-        // var is_remember = false;
+        //var is_remember = false;
     </script>
 </head>
 <body class="index">
@@ -41,14 +44,10 @@
 
     <ul class="layui-nav right" lay-filter="">
         <li class="layui-nav-item">
-            <a href="javascript:;">${admin.loginName}</a>
+            <a href="javascript:;"><shiro:principal/></a>
             <dl class="layui-nav-child">
-                <!-- 二级菜单 -->
                 <dd>
-                    <a onclick="xadmin.open('个人信息','http://www.baidu.com')">个人信息</a>
-                </dd>
-                <dd>
-                    <a href="exit">退出</a>
+                    <a href="/logout">退出</a>
                 </dd>
             </dl>
         </li>
@@ -60,25 +59,48 @@
 <div class="left-nav">
     <div id="side-nav">
         <ul id="nav">
+
             <li>
                 <a href="javascript:;">
-                    <i class="iconfont left-nav-li" lay-tips="会员管理">&#xe6b8;</i>
-                    <cite>会员管理</cite>
+                    <i class="iconfont left-nav-li" lay-tips="用户管理">&#xe6b8;</i>
+                    <cite>用户管理</cite>
                     <i class="iconfont nav_right">&#xe697;</i></a>
                 <ul class="sub-menu">
-                    <li>
-                        <a onclick="xadmin.add_tab('会员列表(静态表格)','member-list.html')">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>添加用户</cite></a>
-                    </li>
-                    <li>
-                        <a onclick="xadmin.add_tab('统计页面','welcome1.html')">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>用户管理</cite></a>
-                    </li>
+                    <shiro:hasPermission name="admin:index">
+                        <li>
+                            <a onclick="xadmin.add_tab('用户管理','<%=request.getContextPath()%>/pages/admin/index')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>用户管理</cite></a>
+                        </li>
+                    </shiro:hasPermission>
+                    <shiro:hasPermission name="role:index">
+                        <li>
+                            <a onclick="xadmin.add_tab('角色管理','<%=request.getContextPath()%>/pages/role/index')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>角色管理</cite></a>
+                        </li>
+                    </shiro:hasPermission>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont left-nav-li" lay-tips="部门管理">&#xe6b8;</i>
+                    <cite>部门管理</cite>
+                    <i class="iconfont nav_right">&#xe697;</i></a>
+                <ul class="sub-menu">
+                    <shiro:hasPermission name="department:index">
+                        <li>
+                            <a onclick="xadmin.add_tab('部门管理','<%=request.getContextPath()%>/pages/department/dep')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>部门管理</cite></a>
+                        </li>
+                    </shiro:hasPermission>
                 </ul>
             </li>
         </ul>
+
     </div>
 </div>
 <!-- <div class="x-slide_left"></div> -->

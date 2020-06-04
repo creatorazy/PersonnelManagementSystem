@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pms.dao.RoleDao">
+
+    <resultMap id="roleMap" type="com.pms.entity.Role">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="details" column="name" jdbcType="VARCHAR"/>
+        <association property="permissions" select="com.pms.dao.PermissionDao.queryPmsByRoleId" column="id" />
+    </resultMap>
+
+    <!--查询数据数量-->
+    <select id="queryCount" resultType="int">
+        select count(*) from pms.role
+        <where>
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+    
+    <select id="isExist" resultType="int">
+        select count(*) from pms.role where name = #{name};
+    </select>
+
+    <select id="queryAllRole" resultMap="roleMap">
+        select id, name, details
+        from role;
+    </select>
+
+    <select id="queryAllByLimit" resultMap="roleMap">
+        select
+        id, name, details
+        from pms.role
+        <where>
+            <if test="t.name != null and t.name != ''">
+                and name like concat('%',#{t.name},'%')
+            </if>
+        </where>
+        limit #{pageUtils.begin},#{pageUtils.end}
+    </select>
+
+    <!--根据登陆名查询拥有角色-->
+    <select id="queryRoleNameByLoginName" resultType="String">
+        select role.name
+        from role
+                 inner join admin_role on role.id = admin_role.role_id
+                 inner join admin on admin_role.admin_id = admin.id
+        where login_name = #{name};
+    </select>
+
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true" parameterType="com.pms.entity.Role">
+        insert into role values (null,#{name},#{details});
+    </insert>
+
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update pms.role
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="details != null">
+                details = #{details},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteByIds">
+        delete
+        from pms.role
+        where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

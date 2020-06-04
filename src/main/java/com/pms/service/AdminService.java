@@ -2,6 +2,7 @@ package com.pms.service;
 
 import com.pms.entity.Admin;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Admin)表服务接口
@@ -9,60 +10,17 @@ import java.util.List;
  * @author makejava
  * @since 2020-05-15 11:13:04
  */
-public interface AdminService {
+public interface AdminService extends BaseService<Admin>{
+
 
     /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    Admin queryById(Integer id);
-
-    /**
-     * 通过ID查询单条数据
+     * 登陆验证
      *
      * @param admin 实例对象
      * @return 实例对象
      */
     Admin queryByLoginNameAndPwd(Admin admin);
 
-    /**
-     * 查询多条数据
-     *
-     * @param offset 查询起始位置
-     * @param limit 查询条数
-     * @return 对象列表
-     */
-    List<Admin> queryAllByLimit(int offset, int limit);
+    Map<String,Object> total();
 
-    /**
-     * 新增数据
-     *
-     * @param admin 实例对象
-     * @return 实例对象
-     */
-    Admin insert(Admin admin);
-
-    /**
-     * 修改数据
-     *
-     * @param admin 实例对象
-     * @return 实例对象
-     */
-    Admin update(Admin admin);
-
-    /**
-     * 通过主键删除数据
-     *
-     * @param id 主键
-     * @return 是否成功
-     */
-    boolean deleteById(Integer id);
-
-    /**
-     * 查询数据条数
-     * @return 数据条数
-     */
-    int queryCount();
 }

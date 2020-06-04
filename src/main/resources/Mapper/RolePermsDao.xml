@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pms.dao.RolePermsDao">
+
+    <resultMap type="com.pms.entity.RolePerms" id="RolePermsMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="roleId" column="role_id" jdbcType="INTEGER"/>
+        <result property="permsId" column="perms_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="RolePermsMap">
+        select id,
+               role_id,
+               perms_id
+        from pms.role_perms
+        where id = #{id}
+    </select>
+
+
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="RolePermsMap">
+        select id,
+               role_id,
+               perms_id
+        from pms.role_perms
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="RolePermsMap">
+        select
+        id, role_id, perms_id
+        from pms.role_perms
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="roleId != null">
+                and role_id = #{roleId}
+            </if>
+            <if test="permsId != null">
+                and perms_id = #{permsId}
+            </if>
+        </where>
+    </select>
+
+    <!--批量新增-->
+    <insert id="insertBitch" >
+        insert into pms.role_perms values
+        <foreach collection="perms" item="p" separator=",">
+            (null,#{p.roleId},#{p.permsId})
+        </foreach>
+    </insert>
+
+    <delete id="delByRoleId">
+        delete from role_perms where role_id = #{id};
+    </delete>
+
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update pms.role_perms
+        <set>
+            <if test="roleId != null">
+                role_id = #{roleId},
+            </if>
+            <if test="permsId != null">
+                perms_id = #{permsId},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from pms.role_perms
+        where id = #{id}
+    </delete>
+
+</mapper>
