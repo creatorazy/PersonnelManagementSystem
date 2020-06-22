@@ -90,17 +90,21 @@
                         url: url,
                         data: data.field,
                         success: function (res) {
-                            layer.alert(res.msg, {icon: 6}, function () {
+                            if (res.code == 200) {
                                 parent.up(data.field);
-                                if (res.code = 200) {
-                                    //关闭当前frame
+                                layer.alert(res.msg, {icon: 6}, function (index1) {
                                     xadmin.close();
-
-                                    // 可以对父窗口进行刷新
-                                    // xadmin.father_reload();
-                                }
-                                layer.closeAll('loading');
-                            });
+                                });
+                            } else if (res.code == 400) {
+                                layer.alert('编辑出错了.....', {icon: 6}, function (index1) {
+                                    layer.close(index1);
+                                });
+                            } else {
+                                layer.alert('你没有权限编辑', {icon: 6}, function (index1) {
+                                    layer.close(index1);
+                                });
+                            }
+                            layer.closeAll('loading');
                         },
                         error: function (res) {
                             layer.msg("请检查网络是否连接")
